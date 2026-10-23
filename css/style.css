@@ -1,0 +1,63 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../imges/background.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo{
+    width: 40px;
+    height: 30px;
+}
+.img1{
+    width: 200px;
+    height: 200px;
+}
+.home2{
+    width: 100%;
+    height: 100vh;
+}
+.food{
+    display: flex;
+    justify-content: space-around;
+}
+.home2 h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card{
+    padding: 0;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    background-color:cadetblue;
+}
+.card img{
+    padding-bottom: 10px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.home2 a{
+    text-decoration: none;
+    color: black;
+}
+.home2 a:hover{
+    color: blue;
+}
+.drinks{
+    display: flex;
+    justify-content: space-around;
+}
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+
