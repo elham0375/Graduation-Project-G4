@@ -41,58 +41,69 @@
     margin-bottom: 20px;
 }
 
-/* Mobile */
 @media (max-width: 991px) {
-    .custom-navbar .container-fluid {
-        flex-wrap: wrap;
-        gap: 10px;
+    .custom-navbar {
+        padding: 10px 15px;
     }
 
     .custom-navbar .navbar-nav {
-        margin: 0 !important;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
     }
 
-    .search-form {
+    .custom-navbar .navbar-nav .nav-link {
+        padding: 8px;
+    }
+
+    .custom-navbar .search-form {
+        margin-top: 10px;
         width: 100%;
     }
 
     .search-form .form-control {
         width: 100%;
+        min-width: 0;
     }
-}
 
-.card {
-    border: none;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card-btn {
-    border-radius: 5px;
-    padding: 8px 16px;
-    transition: 0.3s;
-}
-
-.card-btn:hover {
-    background-color: #282b1e;
-    color: white;
-    transform: translateY(-4px);
+    #foodMenuTitle {
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 576px) {
-    .card {
-        margin-bottom: 20px;
+    .custom-navbar {
+        padding: 8px 12px;
     }
-}
 
-@media (max-width: 768px) {
-    .card {
-        margin-bottom: 20px;
+    .custom-navbar .navbar-brand {
+        font-size: 18px;
+    }
+
+    .custom-navbar .navbar-nav {
+        width: 100%;
+        gap: 0;
+    }
+
+    .custom-navbar .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    .custom-navbar .search-form {
+        display: flex;
+        gap: 8px;
+    }
+
+    .search-form .form-control {
+        flex: 1;
+        width: 0;
+        font-size: 14px;
+    }
+
+    #foodMenuTitle {
+        margin-top: 30px;
+        margin-bottom: 12px;
+        font-size: 24px;
     }
 }

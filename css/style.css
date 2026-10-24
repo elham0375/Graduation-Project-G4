@@ -61,3 +61,74 @@
     object-fit: cover;
 }
 
+@media (max-width: 991px) {
+    .home2 {
+        height: auto;
+        padding: 30px 15px;
+    }
+    .food,
+    .drinks {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        max-width: 45%;
+        flex: 0 0 45%;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+    }
+    .hero {
+        background-position: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 70vh;
+        min-height: 400px;
+        background-position: center;
+    }
+
+    .home2 {
+        width: 100%;
+        height: auto;
+        padding: 25px 12px;
+    }
+    .home2 h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .food,
+    .drinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+  .card {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 10px;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .img1 {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+

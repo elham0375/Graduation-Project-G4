@@ -1,0 +1,245 @@
+** {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f5f0;
+    color: #333;
+    padding: 30px 20px;
+}
+
+
+.menu-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Header */
+.menu-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-header h1 {
+    font-size: 38px;
+    color: #3e2723;
+    margin-bottom: 8px;
+}
+
+.menu-header p {
+    color: #6d4c41;
+    font-size: 18px;
+}
+
+/* Sections */
+.menu-section {
+    margin-bottom: 40px;
+}
+
+.menu-section h2 {
+    font-size: 26px;
+    color: #4e342e;
+    border-bottom: 3px solid #d7ccc8;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+
+.items-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.item-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    width: calc(33.333% - 15px); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+
+.item-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.item-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.item-info h3 {
+    font-size: 18px;
+    color: #2c1d11;
+    margin-bottom: 6px;
+}
+
+.item-info .description {
+    font-size: 13px;
+    color: #757575;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.item-info .price {
+    font-weight: bold;
+    font-size: 16px;
+    color: #2e7d32;
+    background-color: #e8f5e9;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    width: fit-content;
+}
+/* Back to Home Button Styling */
+.back-home-container {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+.back-home-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4e342e;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.back-home-btn:hover {
+    background-color: #3e2723;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    body {
+        padding: 25px 15px;
+    }
+    .menu-container {
+        width: 100%;
+    }
+
+    .menu-header h1 {
+        font-size: 32px;
+    }
+
+    .menu-header p {
+        font-size: 16px;
+    }
+
+    .menu-section h2 {
+        font-size: 24px;
+    }
+
+    .item-card {
+        width: calc(50% - 10px);
+    }
+
+    .item-card img {
+        height: 190px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 20px 12px;
+    }
+    .menu-header {
+        margin-bottom: 30px;
+    }
+
+    .menu-header h1 {
+        font-size: 28px;
+    }
+
+    .menu-header p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .menu-section {
+        margin-bottom: 30px;
+    }
+    .menu-section h2 {
+        font-size: 22px;
+        padding-bottom: 8px;
+        margin-bottom: 18px;
+    }
+
+    .items-grid {
+        gap: 15px;
+    }
+    .item-card {
+        width: 100%;
+    }
+
+    .item-card img {
+        height: 200px;
+    }
+    .item-info {
+        padding: 12px;
+    }
+    .item-info h3 {
+        font-size: 17px;
+    }
+
+    .item-info .description {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .back-home-container {
+        margin: 30px 0 15px;
+    }
+    .back-home-btn {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 360px) {
+    body {
+        padding: 15px 8px;
+    }
+
+    .menu-header h1 {
+        font-size: 24px;
+    }
+
+    .menu-section h2 {
+        font-size: 20px;
+    }
+
+    .item-card img {
+        height: 170px;
+    }
+
+    .back-home-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
