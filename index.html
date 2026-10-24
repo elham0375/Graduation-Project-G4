@@ -11,13 +11,17 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="imges/logo.jpeg" class="logo">
-        Munch Lab</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mx-auto" >
+      <img src="imges/logo.jpeg" class="logo" alt="Logo">
+        Munch Lab
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a class="nav-link active" href="#">Home</a>
           </li>
@@ -25,17 +29,15 @@
             <a class="nav-link" href="menu.html">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">Contact</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="search"/>
           <button type="submit" class="btn btn-outline-success">Search</button>
-
         </form>
-      </div>
-    </div>
-
+        </div>
+        </div>
   </nav>
   <section class="hero d-flex align-items-center justify-content-center text-center mb-3" id="home">
     <div class="caption container-fluid" >
