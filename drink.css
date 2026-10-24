@@ -111,7 +111,7 @@ body {
     display: inline-block;
     width: fit-content;
 }
-/* Back to Home Button Styling */
+
 .back-home-container {
     text-align: center;
     margin: 40px 0 20px 0;
@@ -136,32 +136,21 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
 
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.item-card {
+    width: 100%;
+    min-width: 0;
+}
+
 @media (min-width: 577px) and (max-width: 991px) {
-    body {
-        padding: 25px 15px;
-    }
-    .menu-container {
-        width: 100%;
-    }
-
-    .menu-header h1 {
-        font-size: 32px;
-    }
-
-    .menu-header p {
-        font-size: 16px;
-    }
-
-    .menu-section h2 {
-        font-size: 24px;
-    }
-
-    .item-card {
-        width: calc(50% - 10px);
-    }
-
-    .item-card img {
-        height: 190px;
+    .items-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
     }
 }
 
@@ -169,77 +158,64 @@ body {
     body {
         padding: 20px 12px;
     }
-    .menu-header {
-        margin-bottom: 30px;
-    }
-
-    .menu-header h1 {
-        font-size: 28px;
-    }
-
-    .menu-header p {
-        font-size: 15px;
-        line-height: 1.6;
-    }
-
-    .menu-section {
-        margin-bottom: 30px;
-    }
-    .menu-section h2 {
-        font-size: 22px;
-        padding-bottom: 8px;
-        margin-bottom: 18px;
-    }
 
     .items-grid {
-        gap: 15px;
-    }
-    .item-card {
-        width: 100%;
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
     }
 
+    .items-grid .item-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0;
+        margin: 0 !important;
+    }
     .item-card img {
-        height: 200px;
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
     }
+
     .item-info {
-        padding: 12px;
+        padding: 8px;
     }
+
     .item-info h3 {
-        font-size: 17px;
+        font-size: 14px;
+        overflow-wrap: anywhere;
     }
-
     .item-info .description {
-        font-size: 13px;
-        line-height: 1.6;
+        font-size: 12px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
     }
 
-    .back-home-container {
-        margin: 30px 0 15px;
-    }
-    .back-home-btn {
-        padding: 12px 25px;
-        font-size: 15px;
+    .item-info .price {
+        font-size: 12px;
+        padding: 5px 6px;
     }
 }
 @media (max-width: 360px) {
     body {
         padding: 15px 8px;
     }
-
-    .menu-header h1 {
-        font-size: 24px;
-    }
-
-    .menu-section h2 {
-        font-size: 20px;
+    .items-grid {
+        gap: 8px !important;
     }
 
     .item-card img {
-        height: 170px;
+        height: 100px;
     }
 
-    .back-home-btn {
-        padding: 10px 20px;
-        font-size: 14px;
+    .item-info {
+        padding: 6px;
+    }
+
+    .item-info h3 {
+        font-size: 13px;
+    }
+    .item-info .description {
+        font-size: 11px;
     }
 }
