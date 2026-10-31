@@ -1,7 +1,7 @@
 // زر الطلب - إضافة للسلة
 document.querySelectorAll(".order-btn").forEach(function (button) {
     button.addEventListener("click", function () {
-        alert("جاري تجهيز طلبك");
+        alert("تمت الإضافة إلى السلة بنجاح 🛒");
     });
 });
 
